@@ -6,8 +6,10 @@ import { zodiac } from '../../data.js';
 
 export default function Main() {
   return (
-    <div className="main" style={{ backgroundImage: `url(${background})` }}>
-      Main
-    </div>
+    <main style={{ backgroundImage: `url(${background})` }}>
+      {zodiac.map((sign) => (
+        <ZodiacCard key={sign.id} {...sign} />
+      ))}
+    </main>
   );
 }
