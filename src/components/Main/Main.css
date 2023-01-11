@@ -1,8 +1,11 @@
 main {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
   background-size: cover;
   height: calc(100vh - 80px);
-  align-content: flex-start;
+  overflow: auto;
+  z-index: 0;
+  align-content: space-between;
+  justify-items: center;
+  justify-content: space-between;
 }
